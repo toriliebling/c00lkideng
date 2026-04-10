@@ -1,14 +1,12 @@
-/* Дополнительные стили для страницы colors.html */
+/* Дополнительные стили для страницы clothing.html */
 
-
-
-.colors-section {
+.clothing-section {
     padding: 40px 0;
-    background: linear-gradient(135deg, #fff0f5 0%, #f0f8ff 100%);
+    background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
     position: relative;
 }
 
-.colors-title {
+.clothing-title {
     text-align: center;
     color: #1a535c;
     font-family: "Jost", sans-serif;
@@ -19,7 +17,7 @@
     -webkit-text-stroke: 0;
 }
 
-.colors-subtitle {
+.clothing-subtitle {
     text-align: center;
     color: #1a535c;
     font-family: "Jost", sans-serif;
@@ -31,7 +29,7 @@
     margin-right: auto;
 }
 
-.colors-grid {
+.clothing-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
@@ -40,7 +38,7 @@
     padding: 0 20px;
 }
 
-.color-card {
+.word-card {
     background: white;
     border-radius: 20px;
     padding: 25px 20px;
@@ -54,13 +52,32 @@
     cursor: pointer;
 }
 
-.color-card:hover {
+.word-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     border-color: #06d6a0;
 }
 
-.color-image {
+
+.word-english {
+    color: #1a535c;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.word-translation {
+    color: #666;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+
+.word-image {
     width: 100px;
     height: 100px;
     margin: 15px 0;
@@ -73,29 +90,13 @@
     justify-content: center;
 }
 
-.color-image img {
+.word-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.color-english {
-    color: #1a535c;
-    font-family: "Jost", sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-.color-translation {
-    color: #666;
-    font-family: "Jost", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.color-btn {
+.word-btn {
     margin-top: 10px;
     padding: 12px 20px;
     background: #06d6a0;
@@ -117,13 +118,13 @@
     max-width: 200px;
 }
 
-.color-btn:hover {
+.word-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 0 #05b38a;
     background: #09f7bb;
 }
 
-.color-btn:active {
+.word-btn:active {
     transform: translateY(0);
     box-shadow: 0 2px 0 #05b38a;
 }
@@ -151,7 +152,7 @@
     margin-bottom: 20px;
 }
 
-/* Стили для раздела заданий */
+/* Стили для раздела заданий (уже есть в numbers_style.css, но продублируем для ясности) */
 .exercises-section {
     margin-top: 60px;
     padding: 30px 0;
@@ -244,8 +245,8 @@
     background: #ff8e8e;
 }
 
-/* Стили для попапа с цветом (если понадобится) */
-.color-popup {
+/* Стили для попапа со словом */
+.word-popup {
     display: none;
     position: fixed;
     top: 0;
@@ -311,62 +312,78 @@
     gap: 25px;
 }
 
-.color-sample-large {
+.word-image-large {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 15px;
     overflow: hidden;
     border: 3px solid #1a535c;
     background: #f0f9ff;
 }
 
-.color-info {
+.word-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.word-info {
     text-align: center;
     max-width: 500px;
 }
 
-.color-info h4 {
+.word-info h4 {
     font-size: 32px;
     margin-bottom: 10px;
     color: #1a535c;
 }
 
-.color-info p {
+.word-info p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
+.word-info ul {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.word-info li {
+    margin-bottom: 8px;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
-    .colors-title {
+    .clothing-title {
         font-size: 28px;
     }
     
-    .colors-subtitle {
+    .clothing-subtitle {
         font-size: 18px;
         padding: 0 15px;
     }
     
-    .colors-grid {
+    .clothing-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 20px;
         padding: 0 15px;
     }
     
-    .color-english {
+    .word-english {
         font-size: 24px;
     }
     
-    .color-translation {
+    .word-translation {
         font-size: 16px;
     }
-    
-    .color-sample {
+
+    .word-image {
         width: 80px;
         height: 80px;
     }
-    
+
     .instructions {
         padding: 20px;
         font-size: 16px;
@@ -383,16 +400,16 @@
         width: 95%;
     }
     
-    .color-sample-large {
+    .word-image-large {
         width: 120px;
         height: 120px;
     }
     
-    .color-info h4 {
+    .word-info h4 {
         font-size: 26px;
     }
     
-    .color-info p {
+    .word-info p {
         font-size: 16px;
     }
 }
