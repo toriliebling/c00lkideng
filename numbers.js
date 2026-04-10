@@ -205,28 +205,7 @@ function closeNumberPopup() {
     popup.style.display = 'none';
 }
 
-// Закрытие попапа при клике вне его содержимого
-window.addEventListener('click', function(event) {
-    const popup = document.getElementById('number-popup');
-    if (event.target === popup) {
-        closeNumberPopup();
-    }
-});
 
-// Обработчики для карточек чисел (открытие попапа при клике на карточку)
-document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.number-card');
-    cards.forEach(card => {
-        card.addEventListener('click', function(event) {
-            // Если клик был по кнопке воспроизведения, не открываем попап
-            if (event.target.classList.contains('number-btn')) {
-                return;
-            }
-            const number = parseInt(this.getAttribute('data-number'));
-            showNumberPopup(number, this);
-        });
-    });
-});
 
 // ==================== ИГРА "СОПОСТАВЛЕНИЕ" ====================
 
