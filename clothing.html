@@ -8,11 +8,11 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CoolK1d - Одежда</title>
+    <title>CoolK1d - Цвета</title>
 
     <link rel="stylesheet" href="main.css">
 
-    <link rel="stylesheet" href="clothing_style.css">
+    <link rel="stylesheet" href="colors_style.css">
 
 </head>
 
@@ -33,6 +33,8 @@
                 <p>Be the top!</p>
 
             </div>
+
+            
 
             <!-- Навигационное меню -->
 
@@ -58,186 +60,150 @@
 
     <!-- Основной контент -->
 
-    <main class="clothing-section">
+    <main class="colors-section">
 
         <div class="container">
 
-            <h1 class="clothing-title">Одежда</h1>
+            <h1 class="colors-title">Цвета</h1>
 
-            <p class="clothing-subtitle">Слова, связанные с одеждой и аксессуарами. Нажмите на кнопку 🔊 чтобы услышать произношение.</p>
+            <p class="colors-subtitle">Изучаем названия цветов на английском языке. Нажмите на кнопку 🔊 чтобы услышать произношение.</p>
 
             
 
-            <!-- Сетка слов -->
+            <!-- Сетка цветов -->
 
-            <div class="clothing-grid">
+            <div class="colors-grid">
 
-                <div class="word-card" data-word="shirt">
+                <div class="color-card" data-color="red">
 
-                    <h3 class="word-english">Shirt</h3>
+                    <div class="color-image"><img src="images/colorsimg/red.jpg" alt="Red"></div>
 
-                    <p class="word-translation">Рубашка</p>
+                    <h3 class="color-english">Red</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('shirt')">🔊 Произношение</button>
+                    <p class="color-translation">Красный</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/shirt.jpg" alt="Shirt">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('red', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="pants">
+                <div class="color-card" data-color="orange">
 
-                    <h3 class="word-english">Pants</h3>
+                    <div class="color-image"><img src="images/colorsimg/orange.jpg" alt="Orange"></div>
 
-                    <p class="word-translation">Брюки</p>
+                    <h3 class="color-english">Orange</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('pants')">🔊 Произношение</button>
+                    <p class="color-translation">Оранжевый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/pants.jpg" alt="Pants">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('orange', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="dress">
+                <div class="color-card" data-color="yellow">
 
-                    <h3 class="word-english">Dress</h3>
+                    <div class="color-image"><img src="images/colorsimg/yellow.jpg" alt="Yellow"></div>
 
-                    <p class="word-translation">Платье</p>
+                    <h3 class="color-english">Yellow</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('dress')">🔊 Произношение</button>
+                    <p class="color-translation">Жёлтый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/dress.jpg" alt="Dress">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('yellow', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="skirt">
+                <div class="color-card" data-color="green">
 
-                    <h3 class="word-english">Skirt</h3>
+                    <div class="color-image"><img src="images/colorsimg/green.jpg" alt="Green"></div>
 
-                    <p class="word-translation">Юбка</p>
+                    <h3 class="color-english">Green</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('skirt')">🔊 Произношение</button>
+                    <p class="color-translation">Зелёный</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/skirt.jpg" alt="Skirt">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('green', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="jacket">
+                <div class="color-card" data-color="blue">
 
-                    <h3 class="word-english">Jacket</h3>
+                    <div class="color-image"><img src="images/colorsimg/blue.jpg" alt="Blue"></div>
 
-                    <p class="word-translation">Куртка</p>
+                    <h3 class="color-english">Blue</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('jacket')">🔊 Произношение</button>
+                    <p class="color-translation">Синий</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/jacket.jpg" alt="Jacket">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('blue', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="coat">
+                <div class="color-card" data-color="purple">
 
-                    <h3 class="word-english">Coat</h3>
+                    <div class="color-image"><img src="images/colorsimg/purple.jpg" alt="Purple"></div>
 
-                    <p class="word-translation">Пальто</p>
+                    <h3 class="color-english">Purple</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('coat')">🔊 Произношение</button>
+                    <p class="color-translation">Фиолетовый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/coat.jpg" alt="Coat">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('purple', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="hat">
+                <div class="color-card" data-color="pink">
 
-                    <h3 class="word-english">Hat</h3>
+                    <div class="color-image"><img src="images/colorsimg/pink.jpg" alt="Pink"></div>
 
-                    <p class="word-translation">Шляпа</p>
+                    <h3 class="color-english">Pink</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('hat')">🔊 Произношение</button>
+                    <p class="color-translation">Розовый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/hat.jpg" alt="Hat">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('pink', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="shoes">
+                <div class="color-card" data-color="brown">
 
-                    <h3 class="word-english">Shoes</h3>
+                    <div class="color-image"><img src="images/colorsimg/brown.jpg" alt="Brown"></div>
 
-                    <p class="word-translation">Обувь</p>
+                    <h3 class="color-english">Brown</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('shoes')">🔊 Произношение</button>
+                    <p class="color-translation">Коричневый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/shoes.jpg" alt="Shoes">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('brown', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="socks">
+                <div class="color-card" data-color="black">
 
-                    <h3 class="word-english">Socks</h3>
+                    <div class="color-image"><img src="images/colorsimg/black.jpg" alt="Black"></div>
 
-                    <p class="word-translation">Носки</p>
+                    <h3 class="color-english">Black</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('socks')">🔊 Произношение</button>
+                    <p class="color-translation">Чёрный</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/socks.jpg" alt="Socks">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('black', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="gloves">
+                <div class="color-card" data-color="white">
 
-                    <h3 class="word-english">Gloves</h3>
+                    <div class="color-image"><img src="images/colorsimg/white.jpg" alt="White"></div>
 
-                    <p class="word-translation">Перчатки</p>
+                    <h3 class="color-english">White</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('gloves')">🔊 Произношение</button>
+                    <p class="color-translation">Белый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/gloves.jpg" alt="Gloves">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('white', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="scarf">
+                <div class="color-card" data-color="gray">
 
-                    <h3 class="word-english">Scarf</h3>
+                    <div class="color-image"><img src="images/colorsimg/gray.jpg" alt="Gray"></div>
 
-                    <p class="word-translation">Шарф</p>
+                    <h3 class="color-english">Gray</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('scarf')">🔊 Произношение</button>
+                    <p class="color-translation">Серый</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/scarf.jpg" alt="Scarf">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('gray', this)">🔊 Произношение</button>
                 </div>
 
-                <div class="word-card" data-word="t-shirt">
+                <div class="color-card" data-color="cyan">
 
-                    <h3 class="word-english">T-shirt</h3>
+                    <div class="color-image"><img src="images/colorsimg/cyan.jpg" alt="Cyan"></div>
 
-                    <p class="word-translation">Футболка</p>
+                    <h3 class="color-english">Cyan</h3>
 
-                    <button class="word-btn play-sound" onclick="playWordSound('t-shirt')">🔊 Произношение</button>
+                    <p class="color-translation">Голубой</p>
 
-                    <div class="word-image">
-                        <img src="clothingimg/t-shirt.jpg" alt="T-shirt">
-                    </div>
-
+                    <button class="color-btn play-sound" onclick="playColorSound('cyan', this)">🔊 Произношение</button>
                 </div>
 
             </div>
@@ -246,11 +212,11 @@
 
             <div class="instructions">
 
-                <p>1. Нажмите на кнопку 🔊 под словом, чтобы услышать произношение на английском</p>
+                <p>1. Нажмите на кнопку 🔊 под цветом, чтобы услышать произношение на английском</p>
 
-                <p>2. Повторите слово вслух, стараясь имитировать произношение</p>
+                <p>2. Повторите название цвета вслух, стараясь имитировать произношение</p>
 
-                <p>3. Запомните написание слова и его перевод</p>
+                <p>3. Запомните написание цвета и его перевод</p>
 
                 <p>4. Попробуйте выполнить задания ниже для закрепления</p>
 
@@ -274,9 +240,9 @@
 
                         <h3>Сопоставление</h3>
 
-                        <p>Сопоставьте слово на английском с его переводом.</p>
+                        <p>Сопоставьте цвет на английском с его переводом.</p>
 
-                        <a href="clothing_matching_game.html" class="exercise-btn">Начать игру</a>
+                        <a href="colors_matching_game.html" class="exercise-btn">Начать игру</a>
 
                     </div>
 
@@ -284,9 +250,9 @@
 
                         <h3>Аудирование</h3>
 
-                        <p>Прослушайте слово и выберите правильный перевод.</p>
+                        <p>Прослушайте название цвета и выберите правильный перевод.</p>
 
-                        <a href="clothing_listening_game.html" class="exercise-btn">Начать игру</a>
+                        <a href="colors_listening_game.html" class="exercise-btn">Начать игру</a>
 
                     </div>
 
@@ -294,55 +260,9 @@
 
                         <h3>Запоминание</h3>
 
-                        <p>Проверьте, насколько хорошо вы запомнили слова.</p>
+                        <p>Проверьте, насколько хорошо вы запомнили цвета.</p>
 
-                        <a href="clothing_memorization_game.html" class="exercise-btn">Начать игру</a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Р СџР С•Р С—Р В°Р С— РЎРѓ Р Т‘Р С•Р С—Р С•Р В»Р Р…Р С‘РЎвЂљР ВµР В»РЎРЉР Р…Р С•Р в„– Р С‘Р Р…РЎвЂћР С•РЎР‚Р СР В°РЎвЂ Р С‘Р ВµР в„– -->
-
-            <div id="word-popup" class="word-popup">
-
-                <div class="popup-content">
-
-                    <button class="popup-close" onclick="closeWordPopup()">×</button>
-
-                    <h3 class="popup-title">Слово <span id="popup-word">Shirt</span></h3>
-
-                    <div class="popup-body">
-
-                        <div class="word-image-large">
-
-                            <img id="popup-image" src="images/eee.png" alt="Word">
-
-                        </div>
-
-                        <div class="word-info">
-
-                            <h4 id="popup-word-english">Shirt</h4>
-
-                            <p id="popup-translation">Рубашка</p>
-
-                            <p id="popup-fact">Предмет одежды для верхней части тела.</p>
-
-                            <p><strong>Примеры использования:</strong></p>
-
-                            <ul id="popup-examples">
-
-                                <li>I wear a white shirt to school.</li>
-
-                                <li>This shirt is made of cotton.</li>
-
-                            </ul>
-
-                        </div>
+                        <a href="colors_memorization_game.html" class="exercise-btn">Начать игру</a>
 
                     </div>
 
@@ -396,11 +316,13 @@
 
 
 
-    <script src="clothing.js"></script>
+    <script src="colors.js"></script>
 
     <script src="scroll-to-top.js"></script> <script src="email-popup.js"></script></body>
 
 </html>
+
+
 
 
 
