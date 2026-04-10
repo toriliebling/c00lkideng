@@ -159,15 +159,52 @@ function shuffleArray(array) {
     }
 }
 
-// Play word sound using Web Speech API
+// Play word sound using audio files
 function playWordSound(wordId) {
-    const speech = new SpeechSynthesisUtterance();
-    speech.text = wordData[wordId].english;
-    speech.lang = 'en-US';
-    speech.rate = 0.8;
-    speech.pitch = 1;
-    speech.volume = 1;
-    window.speechSynthesis.speak(speech);
+    // Сопоставление идентификаторов слов с именами файлов
+    const audioFiles = {
+        'mother': 'pronunciation_en_mother.mp3',
+        'father': 'pronunciation_en_father.mp3',
+        'sister': 'pronunciation_en_sister.mp3',
+        'brother': 'pronunciation_en_brother.mp3',
+        'grandmother': 'pronunciation_en_grandmother.mp3',
+        'grandfather': 'pronunciation_en_grandfather.mp3',
+        'aunt': 'pronunciation_en_aunt.mp3',
+        'uncle': 'pronunciation_en_uncle.mp3',
+        'cousin': 'pronunciation_en_cousin.mp3',
+        'son': 'pronunciation_en_son.mp3',
+        'daughter': 'pronunciation_en_daughter.mp3',
+        'family': 'pronunciation_en_family.mp3'
+    };
+
+    const fileName = audioFiles[wordId];
+    if (!fileName) {
+        console.error('Аудиофайл для слова "' + wordId + '" не найден');
+        // Fallback на Web Speech API
+        const speech = new SpeechSynthesisUtterance();
+        speech.text = wordData[wordId].english;
+        speech.lang = 'en-US';
+        speech.rate = 0.8;
+        speech.pitch = 1;
+        speech.volume = 1;
+        window.speechSynthesis.speak(speech);
+        return;
+    }
+
+    const audioPath = 'soundsfamily/' + fileName;
+    const audio = new Audio(audioPath);
+
+    audio.play().catch(error => {
+        console.error('Ошибка воспроизведения аудио:', error);
+        // Fallback на Web Speech API если аудиофайл не загрузился
+        const speech = new SpeechSynthesisUtterance();
+        speech.text = wordData[wordId].english;
+        speech.lang = 'en-US';
+        speech.rate = 0.8;
+        speech.pitch = 1;
+        speech.volume = 1;
+        window.speechSynthesis.speak(speech);
+    });
 }
 
 // Check selected answer
