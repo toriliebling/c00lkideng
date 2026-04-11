@@ -108,7 +108,7 @@ function generateQuestion() {
         const item = document.createElement('div');
         item.className = 'item';
         const img = document.createElement('img');
-        img.src = 'images/eee.png';
+        img.src = 'banana.jpg';
         img.alt = 'item';
         item.appendChild(img);
         itemsContainer.appendChild(item);
@@ -134,7 +134,7 @@ function generateQuestion() {
     });
 
     // Update question text
-    questionText.textContent = `Сколько предметов? (Count the items)`;
+    questionText.textContent = `Посчитай сколько тут бананов`;
 }
 
 // Handle answer selection
